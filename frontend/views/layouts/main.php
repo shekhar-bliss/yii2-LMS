@@ -45,6 +45,17 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Login', 'url' => ['/user/security/login']];
     } else {
         $menuItems[] = ['label' => 'Profile', 'url' => ['/user/settings/profile']];
+        $menuItems[] = [
+                        'label' => Yii::$app->user->identity->profile->name,
+                            'items' => [
+                                 '<li class="dropdown-header">Settings</li>',
+                                 ['label' => 'Profile', 'url' => ['/user/settings/profile']],
+                                 ['label' => 'Account', 'url' => ['/user/settings/account']],
+                                 '<li class="divider"></li>',
+                                 ['label' => 'Logout', 'url' => ['/user/security/logout'], 'linkOptions' => ['data-method' => 'post']]
+                            ],
+                        ];
+                        /*
         $menuItems[] = '<li>'
             . Html::beginForm(['/user/security/logout'], 'post')
             . Html::submitButton(
@@ -53,6 +64,7 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
+            */
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
