@@ -43,8 +43,7 @@ AppAsset::register($this);
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/user/registration/register']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/user/security/login']];
-    } else {
-        $menuItems[] = ['label' => 'Profile', 'url' => ['/user/settings/profile']];
+    } else {        
         $menuItems[] = [
                         'label' => Yii::$app->user->identity->profile->name,
                             'items' => [
@@ -54,17 +53,7 @@ AppAsset::register($this);
                                  '<li class="divider"></li>',
                                  ['label' => 'Logout', 'url' => ['/user/security/logout'], 'linkOptions' => ['data-method' => 'post']]
                             ],
-                        ];
-                        /*
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/user/security/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-            */
+                        ];                        
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
