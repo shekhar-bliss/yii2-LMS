@@ -25,7 +25,7 @@ $this->title = 'Vision Study';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                <p><a class="btn btn-default" href="#">MPSC Preparation &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>UPSC</h2>
@@ -35,7 +35,7 @@ $this->title = 'Vision Study';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <p><a class="btn btn-default" href="#">UPSC Preparation &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Bank Exams</h2>
@@ -45,7 +45,7 @@ $this->title = 'Vision Study';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p><a class="btn btn-default" href="#">Bank Exam Preparation &raquo;</a></p>
             </div>
         </div>
 
