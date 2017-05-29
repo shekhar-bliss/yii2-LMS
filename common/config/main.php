@@ -18,8 +18,9 @@ return [
 		        'class' => 'dektrium\user\Module',
                 'modelMap' => [
                     'RegistrationForm' => 'app\models\RegistrationForm',
-                    'User' => 'app\models\User',
+                    //'User' => 'app\models\User',
                 ]
 		    ],
+        'rbac' => 'dektrium\rbac\RbacWebModule',
 		],
 ];
