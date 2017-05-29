@@ -11,7 +11,7 @@ $this->title = 'Vision Study';
 
         <p class="lead">Prepare for competitive exams.</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Vision Study</a></p>
+        <p><a class="btn btn-lg btn-success" href="#">Get started with Vision Study</a></p>
     </div>
 
     <div class="body-content">
